@@ -466,3 +466,41 @@ section {
     background-color: #31D0AA;
 
 }
+
+.modal-overlay {
+    background-color: rgba(46, 47, 66, 0.4);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*opacity: 0; /* це робить блок невидемим для глядача. але функціонально він поверх всього контенту сторінки */
+    /*pointer-events: none; /* це дозволяє блоку ігнорувати кліки миші та пропускати їх скрізь блок до взаємодії з контентом сторінки */ 
+    transition: opacity 250ms ease-in-out;
+}
+
+.modal-overlay.is-open { /* додатковий клас відкривання вікна для java розробника. */
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal {
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    box-shadow: 
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    padding: ;
+    max-width: 408px;
+    height: 584px;
+    max-height: 80%;
+    overflow-y: auto; /* обмежує контент, що дозволяє контонту не висовуватись за межі єелементу, та вмикає прокрутку вертикальну, якщо потрібно */
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
