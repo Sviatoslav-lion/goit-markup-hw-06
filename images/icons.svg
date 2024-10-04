@@ -56,5 +56,8 @@
 <path fill="#f4f4fd" style="fill: var(--color3, #f4f4fd)" d="M0.528 10.636h6.635v21.364h-6.635v-21.364z"></path>
 <path fill="#f4f4fd" style="fill: var(--color3, #f4f4fd)" d="M3.843-0c-2.121 0-3.843 1.721-3.843 3.843s1.721 3.879 3.843 3.879c2.121 0 3.843-1.757 3.843-3.879-0.001-2.121-1.723-3.843-3.843-3.843v0z"></path>
 </symbol>
+<symbol id="icon-subscribe" viewBox="0 0 24 24">
+<path fill="#f4f4fd" style="fill: var(--color3, #f4f4fd)" d="M24 2L0 13.25L7.66994 15.6172L19.5 6.375L10.5017 16.4913L10.509 16.4936L10.5 16.4913V22L14.8013 17.8183L20.2501 19.5L24 2Z"></path>
+</symbol>
 </defs>
 </svg>

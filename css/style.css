@@ -364,15 +364,12 @@ section {
 /* ============================ footer ===================================*/
 .footer {
     padding: 100px 0;
-}
-.footer {
     color: #f4f4fd;
     background-color: #2e2f42;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    
 }
 .footer-logo-discription {
     margin-right: 120px;
@@ -395,6 +392,9 @@ section {
     display: flex;
     align-items: baseline; /*встановлює вирівнювання елементів у поперечному напрямку вздовж головної осі контейнера відносно базової лінії тексту першого рядка кожного елемента*/
 }
+.footer-social-media {
+    margin-right: 80px;
+}
 .social-media-list {
     display: flex;
     gap: 16px;
@@ -408,15 +408,61 @@ section {
 .icon {
     margin: auto;
 }
-.footer-social-media .footer-descripton {
+.footer-descripton.bolt{
     font-weight: 500;
     color: #ffffff;
 }
 .footer-descripton {
     margin-bottom: 16px;
 }
+.footer-subscribe-conteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.subscribe-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background-color: #2e2f42;
+    padding: 8px 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.subscribe-input::placeholder {
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+.subscribe-button {
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #4d5ae5;
+    cursor:pointer;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* задаємо плавність зміни кольору при наведенні для тексту*/
+}
+.subscribe-button-span {
+    padding-right: 16px;
+}
+
 .link_.bigsize:hover, 
-.link_.bigsize:focus {
+.link_.bigsize:focus,
+.subscribe-button:hover,
+.subscribe-button:focus {
     background-color: #31D0AA;
 
 }
