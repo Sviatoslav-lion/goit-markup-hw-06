@@ -371,18 +371,20 @@
                 </svg>
             </button>
             <h2 class="modal-title">Leave your contacts and we will call you back</h2>
-            <form class="form">
-                <lable for="input_name">Name</lable>
-                <input class="form-input" type="text" name="name" id="input_name"/>
-                <lable for="input_phone">Phone</lable>
-                <input class="form-input" type="number" name="phone" id="input_phone"/>
-                <lable for="input_email">Email</lable>
+            <form class="form" name="feedback_form" autocomplete="on" novalidate>
+                <lable class="form-lable" for="input_name">Name</lable>
+                <input class="form-input" type="text" name="name" id="input_name" autofocus/>
+                <lable class="form-lable" for="input_phone">Phone</lable>
+                <input class="form-input" type="tel" name="phone" id="input_phone"/>
+                <lable class="form-lable" for="input_email">Email</lable>
                 <input class="form-input" type="email" name="email" id="input_email"/>
-                <lable for="input_comment">Comment</lable>
-                <input class="form-input" type="text" name="comment" id="input_comment"/>
-                <lable for="input_accepttion">Accepttion checkbox</lable>
-                <input class="form-input" type="checkbox" name="" id="input_accepttion"/>I accept the terms and conditions of the Privacy Policy
-                <button>Send</button>
+                <lable class="form-lable" for="input_comment">Comment</lable>
+                <textarea class="form-textarea" rows="6" placeholder="Text input" name="comment" id="input_comment" ></textarea>
+                <lable class="checkbox-lable">
+                    <input class="form-checkbox" type="checkbox" name="accepttion" value="accept" /> 
+                    I accept the terms and conditions of the <a class="form-link" href="">Privacy Policy</a>
+                </lable>
+                <button class="form-send-button" type="submit">Send</button>
             </form>
         </div>
     </div>
