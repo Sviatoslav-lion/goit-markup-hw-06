@@ -416,6 +416,9 @@ section {
     margin-bottom: 16px;
 }
 .footer-subscribe-conteiner {
+    
+}
+.footer-form {
     display: flex;
     flex-direction: row;
     gap: 24px;
