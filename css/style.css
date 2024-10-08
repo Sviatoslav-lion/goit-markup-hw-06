@@ -479,12 +479,15 @@ section {
     align-items: center;
     justify-content: center;
     opacity: 0; /* це робить блок невидемим для глядача. але функціонально він поверх всього контенту сторінки */
+    visibility: hidden;
     pointer-events: none; /* це дозволяє блоку ігнорувати кліки миші та пропускати їх скрізь блок до взаємодії з контентом сторінки */ 
     transition: opacity 250ms ease-in-out;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open { /* додатковий клас відкривання вікна для java розробника. */
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
 }
 .modal {
