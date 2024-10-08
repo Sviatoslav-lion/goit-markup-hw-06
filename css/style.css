@@ -499,7 +499,7 @@ section {
     max-height: 80%;
     overflow-y: auto; /* обмежує контент, що дозволяє контонту не висовуватись за межі єелементу, та вмикає прокрутку вертикальну, якщо потрібно */
     padding: 24px;  
-    position:fixed;  
+    position:relative;  
 }
 .cross-button {
     width: 24px;
@@ -516,6 +516,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 0;
 }
 .cross-button:hover,
 .cross-button:focus {
@@ -540,7 +541,7 @@ section {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 24px;
+    margin-top: 48px;
     margin-bottom: 16px;
 }
 .form {
@@ -551,7 +552,6 @@ section {
     border: none;
 }
 
-
 .form-lable {
     font-size: 12px;
     line-height: 117%;
@@ -559,13 +559,32 @@ section {
     color: #8e8f99;
     margin-bottom: 4px;
 }
+
 .form-input {
     width: 360px;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    background: transparent;
+    padding-left: 38px;
+    color: #2e2f42;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fantic {
+
+}
+.fantic-input-icon {
+    position: relative;
+}
+.modal-form-input-icon {
+    position: absolute;
+    top:50%;
+    left:16px;
+    transform: translateY(-50%);
     margin-bottom: 8px;
 }
+
+
 .form-textarea {
     padding: 8px 24px;
     resize: none;
@@ -579,6 +598,7 @@ section {
     color: rgba(46, 47, 66, 0.4);
     height: 120px;
     margin-bottom: 16px;
+    background: transparent;
 }
 .checkbox-lable {
     font-weight: 400;
@@ -589,7 +609,7 @@ section {
     margin-bottom: 24px;
     align-items: center;
     justify-items: center;
-
+    background: transparent;
 }
 
 .form-checkbox {
@@ -609,13 +629,15 @@ section {
     text-decoration-skip-ink: none;
     color: #4d5ae5;
 }
-.form-input:hover,
+.form-input:focus + .modal-form-input-icon {
+    fill: #4d5ae5;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 .form-input:focus,
-.form-textarea:hover,
 .form-textarea:focus,
-.checkbox-lable .form-checkbox:hover,
 .checkbox-lable .form-checkbox:focus {
     border: 1px solid #4d5ae5;
+    outline: none;
 }
 
 .form-send-button {
