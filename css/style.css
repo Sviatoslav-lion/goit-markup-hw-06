@@ -507,12 +507,31 @@ section {
     border: none;
     border-radius: 4px;
     border-radius: 100%;
-    position:relative;
+    position: absolute;
+    top: 24px;
     right: 24px;
-    left: 340px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.cross-button.icon {
-    margin: auto;
+.cross-button:hover,
+.cross-button:focus {
+  background-color: #404bbf;
+  border: none;
+    
+}
+.cross-button:hover > .cross-button-icon,
+.cross-button:focus > .cross-button-icon {
+  fill: #ffffff;
+}
+.cross-button-icon {
+    fill: black;
+    width: 8px;
+    height: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
     font-weight: 500;
