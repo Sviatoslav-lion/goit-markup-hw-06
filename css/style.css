@@ -420,6 +420,9 @@ section {
     flex-direction: row;
     gap: 24px;
 }
+.footer-lable {
+    
+}
 .subscribe-input {
     width: 264px;
     height: 40px;
