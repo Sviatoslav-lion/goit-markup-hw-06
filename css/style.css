@@ -430,12 +430,14 @@ section {
     letter-spacing: 0.04em;
     border-radius: 4px;
     color: #fff;
-    background-color: #2e2f42;
     padding: 8px 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .subscribe-input::placeholder {    
     color: #fff;
+}
+.footer-icon {
+    margin-left: 16px;
 }
 .subscribe-button {
     font-weight: 500;
