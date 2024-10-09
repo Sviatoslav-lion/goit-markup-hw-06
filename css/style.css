@@ -421,18 +421,20 @@ section {
     gap: 24px;
 }
 .subscribe-input {
-    border: 1px solid #fff;
-    border-radius: 4px;
     width: 264px;
     height: 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    color: #fff;
     background-color: #2e2f42;
     padding: 8px 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.subscribe-input::placeholder {
-    font-size: 12px;
-    line-height: 200%;
-    letter-spacing: 0.04em;
+.subscribe-input::placeholder {    
     color: #fff;
 }
 .subscribe-button {
@@ -449,7 +451,8 @@ section {
     height: 40px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; /*для вирівнювання контенту по вертикалі */
+    justify-content: center; /* для вирівнювання контенту по горизонталі*/
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border: none;
     margin: 0 auto;
