@@ -1229,8 +1229,9 @@ section {
 .menu-close-button:focus > .cross-button-icon {
     fill: #ffffff;
 }
-.menu-aocial-gap {
+.menu-social-gap {
     gap:40px;
+    width: 100%;
 }
 .social-media-link {
     width: 40px;
@@ -1252,23 +1253,30 @@ section {
     color: #2e2f42;
 }
 .mobile-menu-contacts {
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 .mobile-menu-contacts-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
     text-decoration: none;
-    text-underline-offset: none;
-    cursor:default;
 }
-.current {
+.adress-link-flex.current {
     color: #404bbf;
+}
+.adress-link-flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
 }
 
   @media screen and (min-width: 768px) {
