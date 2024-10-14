@@ -121,9 +121,6 @@ section {
     .header-class {
         width: 100%;
     }
-    .container.flex {
-        /*max-width: 736px;*/
-    }
     .page-nav {
         display: flex;
         align-items: center;
@@ -134,7 +131,6 @@ section {
     }
     .menu {
         display: flex;
-        /*align-items: center;*/
         gap: 40px;
         margin-right: 120px;
     }
@@ -373,7 +369,7 @@ section {
 
 /* ============================= section advantages =========================================*/
 .section-advantages {
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 
 .advantages-list {
@@ -404,7 +400,7 @@ section {
 
 @media screen and (min-width: 768px) {
     .section-advantages {
-        padding: 96px 16px;
+        padding: 96px 0;
         width: 100%;
     }
     .advantages-list {
@@ -464,14 +460,9 @@ section {
 /* ============================= section team =========================================*/
 .section-team {
     background-color: #f4f4fd;
-    padding: 96px 12px;
+    padding: 96px 0;
 }
-/*
-.container {
-    max-width: 264px;
-    padding-left: 0;
-    padding-right: 0;
-}*/
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -560,7 +551,7 @@ section {
 
 @media screen and (min-width: 768px) {
     .section-team {
-      padding: 96px 92px;
+      padding: 96px 0;
       width: 100%;
     }
     .team-list {
@@ -601,10 +592,10 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    row-gap:  48px;
 }
 .portfolio-item {
     width: 288px;
+    margin-bottom: 48px;
     background-color: #fff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -620,6 +611,14 @@ section {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none; /* для скидання стилів обводки для верхнього краю контейнера */
+}
+.portfolio-title {
+    font-family: "Roboto", sans-serif;;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 .portfolio-box-description {
     font-size: 16px;
@@ -646,12 +645,16 @@ section {
 @media screen and (min-width: 768px) {
     .portfolio-section {
         width: 100%;
-        padding: 96px 16px;
+        padding: 96px 0px;
     }
     .portfolio-list {
+        margin-bottom: 0;
         max-width: 736px;
-        gap: 72px 24px;
         flex-direction: row;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .portfolio-item {
     }
   }
 
@@ -665,7 +668,6 @@ section {
         flex-direction: row;
         column-gap: 24px;
         flex-wrap: wrap;
-        row-gap:  48px;
         max-width: 1128px;
     }
     .portfolio-item {
@@ -821,19 +823,22 @@ section {
 
 @media screen and (min-width: 768px) {
     .footer {
-      padding: 96px 92px;
+      padding: 96px 0;
       width: 100%;
     }
     .footerflex {
       flex-direction: row;
-      align-content:flex-start;
       align-items:stretch;
-      justify-content: flex-start;
       flex-wrap:wrap;
+      align-self: flex-start;
+      justify-content: ;
       gap: 72px 24px;
     }
     .logo-footer {
         justify-content:flex-start;
+    }
+    .footer-logo-discription{
+        width: 264px;
     }
     .logo {
         padding: 0;
@@ -841,11 +846,19 @@ section {
     .footer-descripton.bolt{
         justify-content: flex-start;
     }
+    .footer-subscribe {
+        width: 496px;
+        display: block;
+    }
     .footer-form {
         flex-direction: row;
+        justify-content: flex-start;
     }
     .subscribe-input {
         width: 264px;
+    }
+    .subscribe-button {
+        margin: 0;
     }
 }
 
@@ -1174,9 +1187,9 @@ section {
     height: 100%;
     background-color: #ffffff;
     padding: 72px 24px 40px 24px;
-    /*opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none;*/
+    pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
