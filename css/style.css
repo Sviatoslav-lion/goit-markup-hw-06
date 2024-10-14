@@ -122,8 +122,6 @@ section {
         width: 100%;
     }
     .page-nav {
-        display: flex;
-        align-items: center;
     }
     .logo {
         padding: 24px 0;
@@ -132,7 +130,6 @@ section {
     .menu {
         display: flex;
         gap: 40px;
-        margin-right: 120px;
     }
     .link {
         font-weight: 500;
@@ -201,7 +198,6 @@ section {
 }
 @media screen and (min-width: 1158px) {
     .header-class {
-        padding: 0 15px;
     }
     .container.flex {
         max-width: 1158px;
@@ -409,7 +405,7 @@ section {
 
     }
     .advantages-item {
-        width: calc((100% - 24px) / 2);
+        max-width: calc((100% - 24px) / 2);
     }
     .advantages-title {
         text-align: left;
@@ -594,7 +590,7 @@ section {
     flex-wrap: wrap;
 }
 .portfolio-item {
-    width: 288px;
+    width: 100%;
     margin-bottom: 48px;
     background-color: #fff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
@@ -604,10 +600,10 @@ section {
     overflow: hidden;
 }
 .portfolio-img {
-    width: 288px;
+    width: 100%;
 }
 .portfolio-box {
-    width: 288px;
+    width: 100%;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none; /* для скидання стилів обводки для верхнього краю контейнера */
@@ -619,6 +615,7 @@ section {
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .portfolio-box-description {
     font-size: 16px;
@@ -655,6 +652,8 @@ section {
         row-gap: 72px;
     }
     .portfolio-item {
+        margin-bottom: 0;
+        width: calc((100% - 24px)/2);
     }
   }
 
@@ -729,6 +728,8 @@ section {
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .foot-span {
     color: #f4f4fd ;
@@ -739,7 +740,6 @@ section {
     letter-spacing: 0.02em;
     line-height: 1.5;
     text-transform:none;
-    max-width: 288px;
 }
 .footer-descripton.bolt{
     margin-bottom: 16px;
@@ -831,7 +831,7 @@ section {
       align-items:stretch;
       flex-wrap:wrap;
       align-self: flex-start;
-      justify-content: ;
+      justify-content:center;
       gap: 72px 24px;
     }
     .logo-footer {
@@ -850,6 +850,7 @@ section {
         width: 496px;
         display: block;
     }
+    
     .footer-form {
         flex-direction: row;
         justify-content: flex-start;
@@ -872,22 +873,33 @@ section {
         text-transform: uppercase;
         color: #4d5ae5;
     }
-    .footer-logo-discription {
-        margin-right: 120px;
-    }
     .footer-descripton {
         width: 264px;
+    }
+    .footer-descripton.bolt {
+        width: 208px;
+    }
+    .footer-logo-discription {
+        margin-right: 120px;
     }
     .logo-footer {
         margin-bottom: 16px; 
         display: inline-block;
     }
     .footerflex { /* стилі для вирівнювання додаткового контейнера соціальних мереж у футері */
+        gap:0;
         flex-wrap: nowrap;
         align-items: baseline; /*встановлює вирівнювання елементів у поперечному напрямку вздовж головної осі контейнера відносно базової лінії тексту першого рядка кожного елемента*/
     }
     .footer-social-media {
+        width: 208px;
         margin-right: 80px;
+    }
+    .footer-logo-discription{
+        width: 208Spx;
+    }
+    .footer-subscribe {
+        width: 453px;
     }
     .link_footer_color {
         display: flex;
